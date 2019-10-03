@@ -1,16 +1,16 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" href="#">APM</a>
+    <a class="navbar-brand" [routerLink]="['/Home']">APM</a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Matches </a>
+      <li class="nav-item active" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/Members']" >Matches </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Lists</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/Lists']" >Lists</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link " href="#">Messages</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link " [routerLink]="['/Messages']">Messages</a>
       </li>
     </ul>
 
